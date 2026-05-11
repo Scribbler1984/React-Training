@@ -1,1 +1,22 @@
+useState-Hook
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The useState hook is used to manage the state of a functional component in React.
 
+But what exactly is state?
+
+State is data that belongs to a component and can change over time. It represents information that affects what is displayed on the screen. Examples of state include:
+
+a counter value
+text entered into an input field
+whether a modal is open or closed
+a list of items
+user information fetched from an API
+
+In React, functional components are re-executed whenever they re-render. Normally, regular variables do not persist between renders, meaning their values are reset each time the component function runs again.
+
+The useState hook solves this problem by allowing React to:
+
+preserve data between renders
+track changes to that data
+automatically re-render the component when the state changes
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
