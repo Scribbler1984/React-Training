@@ -30,3 +30,29 @@ const [count, setCount] = useState(0);
 We use const because we should not update the count variable directly.
 Instead of changing count manually, we use the setCount function to update its value. This helps React track changes and re-render the component correctly.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+const [count, setCount] = useState(0);
+  1   2  3        4           5
+
+2. useState(0) returns an array with two values: the current state value and a function to update it. Using array destructuring, 
+we extract those values into the variables count and setCount.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+const [count, setCount] = useState(0);
+  1   2  3        4           5
+
+3. The count variable stores the current state value. As mentioned, we do not reassign it directly. Instead, we use useState to manage and update its value.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+const [count, setCount] = useState(0);
+  1   2  3        4           5
+
+4. When you use setCount, you are not directly changing the variable count like you would with normal JavaScript. Instead, you are telling React that the state should change. 
+React treats this as a signal that something in the component has been updated and that the UI may need to reflect a new value.
+
+So when you call something like setCount(count + 1), React first stores the new value internally. Then it schedules the component to run again. 
+This means the entire component function is executed once more, but this time React gives you the updated count value. Because the function runs again, 
+React can update whatever is shown on the screen to match the new state.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+const [count, setCount] = useState(0);
+  1   2  3        4           5
+
+5. useState() is a React Hook that lets a component store and manage changing data (state). It returns two things: the current value and a function to update it. 
+When you use the update function, React saves the new value and re-renders the component so the UI updates automatically.
