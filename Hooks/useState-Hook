@@ -26,7 +26,7 @@ Example:
 const [count, setCount] = useState(0);
   1   2  3        4           5  
 
-1. ==> const
+1. const
 We use const because we should not update the count variable directly.
 Instead of changing count manually, we use the setCount function to update its value. This helps React track changes and re-render the component correctly.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
