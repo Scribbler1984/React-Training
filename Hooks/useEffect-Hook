@@ -30,3 +30,11 @@ console.log("Hello World")
 As we can see in the code above, the dependency array is missing. If we don’t provide a dependency array, the effect runs after every re-render of the component. 
 Every time the effect runs, "Hello World" is printed.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+const [count, setCount] = useState(0);
+
+useEffect(() => {
+  console.log(count);
+}, [count]);
+
+In this example, the useEffect hook will log the count variable to the console whenever count changes its value.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
