@@ -10,3 +10,16 @@ Here are some common use cases for useEffect:
 - Updating the document title
 - Manually interacting with the DOM
 - Subscribing to and unsubscribing from services
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Example:
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+useEffect(()=>{
+print("Hello World")
+}, [])
+
+The useEffect hook takes two arguments. The first argument is an arrow function containing the side-effect logic. The second argument is a dependency array that controls when the 
+effect runs.
+
+In the example above, the useEffect hook runs once after the component is mounted because the dependency array is empty. It prints "Hello World" once and is not executed again.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
