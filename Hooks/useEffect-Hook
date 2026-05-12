@@ -1,1 +1,12 @@
+useEffect-Hook
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The useEffect hook in React is used to run code (side effects) when dependencies change, when the component renders, or when the component mounts (loads).
 
+Here are some common use cases for useEffect:
+
+- Fetching data from an API
+- Setting up timers
+- Listening to browser events
+- Updating the document title
+- Manually interacting with the DOM
+- Subscribing to and unsubscribing from services
